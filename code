@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String input = br.readLine();
+		String res = "";
+		for(int i=0;i<input.length();i++){
+		    int count = 1;
+		    res += input.charAt(i);
+		    if(i != input.length()-1){
+		    while(input.charAt(i+1) == input.charAt(i)) {
+		        count++;
+		        i++;
+		        if(i+1 >= input.length()){
+		            break;
+		        }
+		    }    
+		    }
+		    
+		    res += count;
+		}
+		if(res.length() <= input.length()){
+		System.out.println(res);
+		}
+		else{
+		    System.out.println(input);
+		}
+	}
+}
