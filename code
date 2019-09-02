@@ -1,3 +1,6 @@
+//TIME COMPLEXITY - O(n)
+//SPACE COMPLEXITY - O(n)
+
 import java.util.*;
 import java.io.*;
 public class Main
